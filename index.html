@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BFS Pathfinder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Pathfinder Visualizer</h2>
+
+  <div id="controls">
+    <label>Rows: <input id="rows" type="number" value="10" min="2" max="30"></label>
+    <label>Cols: <input id="cols" type="number" value="10" min="2" max="30"></label>
+    <button id="buildBtn">Build Grid</button>
+
+    <span class="divider">|</span>
+
+    <label>Start (row,col): <input id="startInput" type="text" value="0,0" size="5"></label>
+    <label>End (row,col): <input id="endInput" type="text" value="9,9" size="5"></label>
+    <button id="setBtn">Set Start/End</button>
+
+    <span class="divider">|</span>
+
+    <button id="runBtn">Run BFS</button>
+    <button id="clearBtn">Clear Visited</button>
+    <button id="resetBtn">Reset Walls</button>
+  </div>
+
+  <div id="legend">
+    <span class="legend-box start"></span> Start
+    <span class="legend-box end"></span> End
+    <span class="legend-box wall"></span> Wall
+    <span class="legend-box visited"></span> Visited
+    <span class="legend-box path"></span> Path
+  </div>
+
+  <div id="grid"></div>
+
+  <div id="message"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
