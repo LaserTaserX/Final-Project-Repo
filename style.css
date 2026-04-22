@@ -37,23 +37,6 @@ h2 {
   color: #aaa;
 }
 
-#legend {
-  display: flex;
-  gap: 14px;
-  align-items: center;
-  margin-bottom: 10px;
-  font-size: 13px;
-}
-
-.legend-box {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #999;
-  vertical-align: middle;
-  margin-right: 3px;
-}
-
 #grid {
   display: inline-grid;
   gap: 1px;
@@ -74,12 +57,6 @@ h2 {
 .cell.end     { background: #e74c3c; }
 .cell.visited { background: #74b9ff; }
 .cell.path    { background: #fdcb6e; }
-
-.legend-box.wall    { background: #222; }
-.legend-box.start   { background: #2ecc71; }
-.legend-box.end     { background: #e74c3c; }
-.legend-box.visited { background: #74b9ff; }
-.legend-box.path    { background: #fdcb6e; }
 
 #message {
   margin-top: 12px;
